@@ -84,6 +84,7 @@ export const Contact = () => {
                         <p className={status.success === false ? "danger" : "success"}>{status.message}</p>
                       </Col>
                     }
+                    
                   </Row>
                 </form>
               </div>}
