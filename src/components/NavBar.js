@@ -51,7 +51,7 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="
-                https://www.linkedin.com/in/prashanth-reddy-dandyala?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app
+                https://www.linkedin.com/in/prashanthreddy-/
                 "><img src={navIcon1} alt="" /></a>
                 <a href="#"><img src={navIcon2} alt="" /></a>
                 <a href="https://www.instagram.com/pr45h4n7h_r3ddy/?igshid=MTNiYzNiMzkwZA%3D%3D"><img src={navIcon3} alt="" /></a>
