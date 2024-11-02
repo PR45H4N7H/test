@@ -26,17 +26,17 @@ export const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setButtonText("Sending...");
-    let response = await fetch("http://localhost:5000/contact", {
+    let response = await fetch("https://formspree.io/f/mkgnjqaz", {
       method: "POST",
       headers: {
-        "Content-Type": "application/json;charset=utf-8",
+        "Accept": "application/json;charset=utf-8",
       },
       body: JSON.stringify(formDetails),
     });
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.ok) {
       setStatus({ succes: true, message: 'Message sent successfully'});
     } else {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
@@ -59,7 +59,7 @@ export const Contact = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <h2>Get In Touch</h2>
-                <p>Haven't added the functionality to send mails yet, Its Just a Static Form </p>
+                <p>Resumed functionality on 11/2/24 </p>
                 <form onSubmit={handleSubmit}>
                   <Row>
                     <Col size={12} sm={6} className="px-1">
