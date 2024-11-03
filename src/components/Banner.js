@@ -11,7 +11,7 @@ export const Banner = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "a Full Stack Web Developer", "looking out for opportunities" ];
+  const toRotate = [ "a Web Dev, Data Analyst", "looking out for internships" ];
   const period = 2000;
 
   useEffect(() => {
@@ -56,8 +56,8 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
-                <h1>{`Hi! I'm Prashanth Reddy`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Full Stack Web Developer", "looking out for opportunities" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>A Northwest Missouri State University alumni, I'm currently seeking roles in full-stack web development, front-end, or backend development. Eager to apply my skills and passion for technology, I bring a strong educational background and a commitment to innovation to any dynamic team.</p>
+                <h1>{`Hi! I'm Salina`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "a Web Dev, Data Analyst", "looking out for internships" ]'><span className="wrap">{text}</span></span></h1>
+                  <p>A Washburn University Freshman, I'm currently seeking roles in web development, Data Analyst. Eager to apply my skills and passion for technology, I bring a strong educational background and a commitment to innovation to any dynamic team.</p>
                   <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
               </div>}
             </TrackVisibility>
